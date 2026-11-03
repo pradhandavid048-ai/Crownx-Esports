@@ -368,6 +368,19 @@ document.getElementById("forgotLink").addEventListener("click", function(e) {
         "Password recovery will be enabled with Supabase.";
 });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
+<script>
+const SUPABASE_URL = "https://vswuxovsvxaweoqlmfbl.supabase.co";
+
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_eXdcTQMemNEb2yEl6KNgKQ_CLS9HiRk";
+
+const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_PUBLISHABLE_KEY
+);
+
+console.log("CrownX Supabase connected");
+</script>
 </body>
   </html>
